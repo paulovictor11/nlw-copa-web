@@ -41,28 +41,6 @@ export default function Home(props: HomeProps) {
                         </strong>
                     </div>
 
-                    {/* <form onSubmit={createPool} className="mt-10 flex gap-2">
-                        <input
-                            className="flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm text-gray-100"
-                            type="text"
-                            required
-                            placeholder="Qual nome do seu bolão?"
-                            onChange={(event) => setPoolTitle(event.target.value)}
-                            value={poolTitle}
-                        />
-                        <button
-                            className="bg-yellow-500 px-6 py-4 rounded font-bold uppercase text-gray-900 text-sm hover:bg-yellow-700 transition-colors"
-                            type="submit"
-                        >
-                            Criar meu bolão
-                        </button>
-                    </form> */}
-
-                    {/* <p className="mt-4 text-sm text-gray-300 leading-relaxed">
-                        Após criar seu bolão, você receberá um código único que
-                        poderá usar para convidar outras pessoas 🚀
-                    </p> */}
-
                     <Link href="/dashboard/meus-boloes">
                         <Button color="red" full>
                             <GoogleLogo size={20} weight="bold" />

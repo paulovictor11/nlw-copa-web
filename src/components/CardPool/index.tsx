@@ -12,7 +12,7 @@ type CardPoolProps = {
 export function CardPool(props: CardPoolProps) {
     return (
         <Link href={props.path}>
-            <Card>
+            <Card borderColor="yellow">
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col">
                         <span className="font-bold text-base text-white">
