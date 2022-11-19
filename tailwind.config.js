@@ -1,3 +1,5 @@
+const puglin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/**/*.tsx"],
@@ -41,5 +43,9 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        puglin(({ addVariant }) => {
+            addVariant("state-active", '&[data-state="active"]');
+        }),
+    ],
 };

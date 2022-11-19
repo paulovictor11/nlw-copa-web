@@ -7,7 +7,7 @@ type CardCalendarRootProps = {
 
 function CardCalendarRoot(props: CardCalendarRootProps) {
     return (
-        <Card borderColor="blue">
+        <Card borderColor="yellow">
             <div className="pt-4 px-2">{props.children}</div>
         </Card>
     );
@@ -69,7 +69,7 @@ function CardCalendarTile(props: CardCalendarTileProps) {
 
 CardCalendarTile.displayName = "CardCalendar.Tile";
 
-export const CardCalendar = {
+export const CalendarCard = {
     Root: CardCalendarRoot,
     Header: CardCalendarHeader,
     Content: CardCalendarContent,

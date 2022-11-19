@@ -13,7 +13,7 @@ export function Common(props: CommonProps) {
         <div className="h-screen mx-auto">
             <Navbar />
 
-            <div className="max-w-[1124px] mx-auto mt-10">{props.children}</div>
+            <div className="max-w-[1280px] mx-auto mt-10">{props.children}</div>
 
             <Dialog.Root>
                 <FAB />

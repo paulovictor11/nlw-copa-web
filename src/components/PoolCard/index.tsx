@@ -9,13 +9,13 @@ type CardPoolProps = {
     path: string;
 };
 
-export function CardPool(props: CardPoolProps) {
+export function PoolCard(props: CardPoolProps) {
     return (
         <Link href={props.path}>
             <Card borderColor="yellow">
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col">
-                        <span className="font-bold text-base text-white">
+                        <span className="max-w-[190px] font-bold text-base text-white truncate">
                             {props.title}
                         </span>
                         <span className="font-normal text-xs text-gray-200">
