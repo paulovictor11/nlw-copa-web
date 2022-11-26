@@ -1,3 +1,4 @@
+import cx from "classnames";
 import { Card } from "../Card";
 
 type RankingCardProps = {
@@ -29,14 +30,20 @@ export function RankingCard({
                 </div>
 
                 <div
-                    className={`h-7 w-10 rounded-full flex items-center justify-center ${
-                        isTopLeader ? "bg-yellow-500" : "bg-gray-600"
-                    }`}
+                    className={cx(
+                        "h-7 w-10 rounded-full flex items-center justify-center bg-gray-600",
+                        {
+                            "bg-yellow-500": isTopLeader,
+                        }
+                    )}
                 >
                     <span
-                        className={`font-bold text-center text-base ${
-                            isTopLeader ? "text-black" : "text-gray-300"
-                        }`}
+                        className={cx(
+                            "font-bold text-center text-base text-gray-300",
+                            {
+                                "text-black": isTopLeader,
+                            }
+                        )}
                     >
                         {position}
                     </span>

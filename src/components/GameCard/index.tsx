@@ -1,3 +1,4 @@
+import cx from "classnames";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { Card } from "../Card";
 
@@ -78,11 +79,15 @@ function CardGameAction({
     return (
         <button
             {...rest}
-            className={`w-full h-8 mt-4 rounded uppercase text-xs font-bold ${
-                isExpired
-                    ? "bg-gray-600 text-gray-300 hover:cursor-not-allowed"
-                    : "bg-green-500 text-white hover:cursor-pointer hover:bg-green-600"
-            }`}
+            className={cx(
+                "w-full h-8 mt-4 rounded uppercase text-xs font-bold",
+                {
+                    "bg-gray-600 text-gray-300 hover:cursor-not-allowed":
+                        isExpired,
+                    "bg-green-500 text-white hover:cursor-pointer hover:bg-green-600":
+                        !isExpired,
+                }
+            )}
         >
             {isExpired ? "Tempo Esgotado" : label}
         </button>

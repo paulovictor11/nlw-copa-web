@@ -17,12 +17,12 @@ export function Navbar() {
                     <NavLink
                         label="Meus bolões"
                         icon={<SoccerBall size={18} />}
-                        link="/dashboard/meus-boloes"
+                        link="/painel/meus-boloes"
                     />
                     <NavLink
                         label="Calendário"
                         icon={<CalendarBlank size={18} />}
-                        link="/dashboard/calendario"
+                        link="/painel/calendario"
                     />
                 </div>
 
